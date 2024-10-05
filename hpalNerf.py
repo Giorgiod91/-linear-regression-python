@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+##TODO::add that it doesnt have to be a nerf or has to be true all time at the given dates
+
 #dates for the nerfs 
 x_train  = np.array([17.9,9.10,])
 #nerf in %
