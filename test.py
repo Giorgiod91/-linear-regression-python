@@ -8,6 +8,7 @@ w= 200
 b= 100
 x_i =1.2
 
+
 cost_example = w * x_i + b 
 print(cost_example)
 
