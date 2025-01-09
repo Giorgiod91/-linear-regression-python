@@ -29,16 +29,21 @@ y_target = "Heart_Attack_Incidence"
 X = data[X_features]
 y = data[y_target]
 
-X_encoded = pd.get_dummies(X, drop_first=True)
 
 
-# Scale the features
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X_encoded)
+age_group = data["Age_Group"]
 
 
-# Split the dataset into training and testing sets
-X_train, X_test , y_train , y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+
+plt.scatter(age_group, y, marker="x", c="r")
+plt.title("showcase for now")
+plt.ylabel("Heart Attacks")
+plt.xlabel("Age")
+plt.show()
+
+
+
 
 
 
