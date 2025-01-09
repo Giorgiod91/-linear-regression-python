@@ -32,17 +32,17 @@ y = data[y_target]
 X_encoded = pd.get_dummies(X, drop_first=True)
 
 
-
+# Scale the features
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X_encoded)
 
 
-
+# Split the dataset into training and testing sets
 X_train, X_test , y_train , y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
 log_reg = LogisticRegression(max_iter=1000, random_state=42)
 log_reg.fit(X_train, y_train)
-
+# new dummie datat
 new_data = pd.DataFrame({
     "State": ["Bavaria"],
     "Age_Group": ["Adult"],
