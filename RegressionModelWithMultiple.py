@@ -256,3 +256,5 @@ x_house_two_norm = (x_house_two - X_mu) / X_sigma
 print(x_house_norm)
 x_house_two_predict  = np.dot(x_house_two_norm, w_norm) + b_norm
 print(f" predicted price of a house with 1400 sqft, 4 bedrooms, 2 floor, 20 years old = ${x_house_two_predict*1000:0.0f}")
+
+
